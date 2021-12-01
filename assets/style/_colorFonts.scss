@@ -1,0 +1,21 @@
+$primary-color:#3264A6;
+$secondary-color:#5FAAD9;
+$heading-text-color:#224573;
+
+$primary-text-color:#0C0B0D;
+$secondary-text-color:#A69C97;
+
+$point-1-color:#F28DBC;
+$point-2-color:#F2CD5C;
+$point-3-color:#F2B872;
+
+
+@mixin fontSize($value){
+   @if $value == small{
+       font-size: 16px;
+   }@else if $value == medium{
+       font-size:21px ;
+   }@else if $value == large{
+       font-size: 34px;
+   }
+}

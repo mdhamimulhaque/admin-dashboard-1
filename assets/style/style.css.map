@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,gIAAI;AACZ,AAAA,CAAC,CAAA;EACG,MAAM,EAAC,CAAC;EACR,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,oBAAoB;CACpC",
+    "sources": [
+        "style.scss",
+        "_reset.scss",
+        "_colorFonts.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
