@@ -18,7 +18,7 @@
     <main class="dashboard">
         <!--navbar -->
         <nav>
-            <img src="./assets/images/logo-social.jpg" alt="logo">
+            <img src="./assets/images/logo.jpg" alt="logo">
             <div class="icons-box">
                 <i class="fas fa-th-large"></i>
                 <i class="fas fa-chart-line"></i>
@@ -26,22 +26,27 @@
                 <i class="fas fa-calendar-check"></i>
                 <i class="fas fa-cogs"></i>
             </div>
+            <img src="./assets/images/h1-min.jpeg" alt="logo">
         </nav>
         <!--navbar end-->
         <!-- article -->
         <article>
-            <section class="search"><!-- search -->
+            <section class="search">
+                <!-- search -->
                 <div class="search-input-box">
-                    <input type="text" name="search" placeholder="search here">
-                    <i class="fas fa-search"></i>
+                    <form action="#">
+                        <input type="text" name="search" placeholder="search here">
+                        <i class="fas fa-search"></i>
+                    </form>
                 </div>
-                <div class="noti-eiit-box">
+                <div class="noti-edit-box">
                     <i class="fas fa-bell"></i>
                     <i class="fas fa-edit"></i>
                 </div>
             </section><!-- search end-->
 
-            <section class="title"><!-- title -->
+            <section class="title">
+                <!-- title -->
                 <h2>My Projects</h2>
                 <form action="#">
                     <label for="Projects">Sort By</label>
@@ -53,8 +58,10 @@
                 </form>
             </section><!-- title end-->
 
-            <section class="projects-list"><!-- project list -->
-                <div class="project"><!-- project 1 -->
+            <section class="projects-list">
+                <!-- project list -->
+                <div class="project">
+                    <!-- project 1 -->
                     <div class="category-color"></div>
                     <h4>Graphic Design</h4>
                     <p>Active Recently</p>
@@ -65,15 +72,16 @@
                     <div class="info">
                         <div class="info-img">
                             <img src="./assets//images/1.jpg" alt="">
-                            <img src="./assets//images/2.jpg" alt="">
-                            <img src="./assets//images/3.jpg" alt="">
+                            <img class="setup" src="./assets//images/2.jpg" alt="">
+                            <img class="setup" src="./assets//images/3.jpg" alt="">
                         </div>
                         <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div><!-- project 1 end-->
 
-                <div class="project"><!-- project 2 -->
-                    <div class="category-color"></div>
+                <div class="project">
+                    <!-- project 2 -->
+                    <div class="category-color category-color1"></div>
                     <h4>Web Design</h4>
                     <p>2 hours ago</p>
                     <ul>
@@ -82,14 +90,15 @@
                     <div class="info">
                         <div class="info-img">
                             <img src="./assets//images/1.jpg" alt="">
-                            <img src="./assets//images/3.jpg" alt="">
+                            <img class="setup" src="./assets//images/3.jpg" alt="">
                         </div>
                         <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div><!-- project 2 end-->
 
-                <div class="project"><!-- project 3 -->
-                    <div class="category-color"></div>
+                <div class="project">
+                    <!-- project 3 -->
+                    <div class="category-color category-color2"></div>
                     <h4>Web Development</h4>
                     <p>2 days ago</p>
                     <ul>
@@ -104,8 +113,9 @@
                     </div>
                 </div><!-- project 3 end-->
 
-                <div class="project"><!-- project 4 -->
-                    <div class="category-color"></div>
+                <div class="project">
+                    <!-- project 4 -->
+                    <div class="category-color category-color3"></div>
                     <h4>App Development</h4>
                     <p>5 days ago</p>
                     <ul>
@@ -120,8 +130,9 @@
                     </div>
                 </div><!-- project 4 end-->
 
-                <div class="project"><!-- project 5 -->
-                    <div class="category-color"></div>
+                <div class="project">
+                    <!-- project 5 -->
+                    <div class="category-color category-color4"></div>
                     <h4>SEO</h4>
                     <p>2 days ago</p>
                     <ul>
@@ -130,14 +141,15 @@
                     <div class="info">
                         <div class="info-img">
                             <img src="./assets//images/3.jpg" alt="">
-                            <img src="./assets//images/2.jpg" alt="">
+                            <img class="setup" src="./assets//images/2.jpg" alt="">
                         </div>
                         <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div><!-- project 5 end-->
 
-                <div class="project"><!-- project 6 -->
-                    <div class="category-color"></div>
+                <div class="project">
+                    <!-- project 6 -->
+                    <div class="category-color category-color5"></div>
                     <h4>Wordpress</h4>
                     <p>2 days ago</p>
                     <ul>
@@ -147,8 +159,8 @@
                     <div class="info">
                         <div class="info-img">
                             <img src="./assets//images/3.jpg" alt="">
-                            <img src="./assets//images/2.jpg" alt="">
-                            <img src="./assets//images/1.jpg" alt="">
+                            <img class="setup" src="./assets//images/2.jpg" alt="">
+                            <img class="setup" src="./assets//images/1.jpg" alt="">
                         </div>
                         <i class="fas fa-ellipsis-v"></i>
                     </div>
@@ -160,46 +172,62 @@
 
         <!--aside -->
         <aside>
-            <section class="user-info"><!--user info-->
-                <img src="./assets/images/h1-min.jpeg" alt="">
-                <h2>Md Hamimul Haque</h2>
-            </section><!--user info end-->
+            <section class="user-info">
+                <!--user info-->
+                <center>
+                    <img src="./assets/images/h1-min.jpeg" alt="">
+                    <h2>Md Hamimul Haque</h2>
+                </center>
+            </section>
+            <!--user info end-->
 
-            <section class="chart"><!-- chart -->
+            <section class="chart">
+                <!-- chart -->
                 <h4>Total Projects</h4>
                 <canvas id="myChart" width="400" height="400"></canvas>
                 <h5>5 Completed</h5>
                 <p>from 10 projects</p>
-            </section><!--chart end-->
+            </section>
+            <!--chart end-->
 
-            <section class="recent-projects"><!--recent projects-->
-                <div class="recent-cata-box"><!--(1)-->
-                    <div class="catagory-color"></div>
-                    <h4>Web Development</h4>
-                    <p>by Md Hamimul Haque</p>
+            <section class="recent-projects">
+                <!--recent projects-->
+                <div class="recent-box"><!--(1)-->
+                    <div class="recent-text">
+                        <div class="catagory-color category-color1"></div>
+                        <h4>Web Development</h4>
+                        <p>by Md Hamimul Haque</p>
+                    </div>
                     <i class="fas fa-ellipsis-v"></i>
                 </div>
-                
-                <div class="recent-cata-box"><!--(2)-->
-                    <div class="catagory-color"></div>
-                    <h4>App Development</h4>
-                    <p>by Shauvik Ghosh</p>
+
+                <div class="recent-box"><!--(2)-->
+                    <div class="recent-text">
+                        <div class="catagory-color category-color2"></div>
+                        <h4>App Development</h4>
+                        <p>by Shauvik Ghosh</p>
+                    </div>
                     <i class="fas fa-ellipsis-v"></i>
                 </div>
-                
-                <div class="recent-cata-box"><!--(3)-->
-                    <div class="catagory-color"></div>
-                    <h4>Web Development</h4>
-                    <p>by Md Shariar Ragib</p>
+
+                <div class="recent-box"><!--(3)-->
+                    <div class="recent-text">
+                        <div class="catagory-color category-color4"></div>
+                        <h4>Web Development</h4>
+                        <p>by Md Shariar Ragib</p>
+                    </div>
                     <i class="fas fa-ellipsis-v"></i>
                 </div>
-                 <div class="recent-cata-box"><!--(4)-->
-                    <div class="catagory-color"></div>
-                    <h4>SEO</h4>
-                    <p>by Sajib Guddu</p>
+                <div class="recent-box"><!--(4)-->
+                    <div class="recent-text">
+                        <div class="catagory-color"></div>
+                        <h4>SEO</h4>
+                        <p>by Sajib Guddu</p>
+                    </div>
                     <i class="fas fa-ellipsis-v"></i>
                 </div>
-            </section><!--recent projects end-->
+            </section>
+            <!--recent projects end-->
         </aside>
         <!--aside end-->
     </main>

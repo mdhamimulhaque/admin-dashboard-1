@@ -1,3 +1,221 @@
 @import "reset";
 @import "colorFonts";
 
+@mixin DisplayFlexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    background: $bg-color;
+    main {
+        padding: 0px 20px;
+        margin: 0 auto;
+        // ========= navigation ===========
+        nav {
+            @include DisplayFlexBetween;
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 50%;
+            height: 70px;
+            img {
+                width: 35px;
+                width: 35px;
+                border-radius: 5px;
+            }
+            .icons-box {
+                i {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    @include fontSize(medium);
+                    color: $secondary-color;
+                }
+            }
+        }
+
+        // --------- article ----------------
+        article {
+            //  ========== search ============
+            .search {
+                .search-input-box {
+                    form {
+                        margin-top: 5px;
+                        position: relative;
+                        input {
+                            width: 100%;
+                            padding: 5px 5px 5px 30px;
+                            border: 1px solid $primary-color;
+                            outline: 1px solid $primary-color;
+                            @include fontSize(medium);
+                        }
+                        i {
+                            position: absolute;
+                            left: 10px;
+                            top: 8px;
+                        }
+                    }
+                }
+                .noti-edit-box {
+                    margin-top: 10px;
+                    i:nth-child(1) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        //  =========== title ===========
+        .title {
+            h2 {
+                margin-top: 10px;
+                @include fontSize(larger);
+            }
+            form {
+                margin: 10px 0px 20px 0px;
+                label {
+                    margin-right: 10px;
+                    color: $secondary-textColor;
+                }
+                select {
+                    height: 25px;
+                }
+            }
+        }
+        //========== projects-list ========
+        .projects-list {
+            .project {
+                background: #fff;
+                padding: 10px 20px 10px 40px;
+                box-shadow: 1px 1px 10px $primary-color;
+                margin: 5px 0px 20px 0px;
+                border-radius: 10px;
+                position: relative;
+                .category-color {
+                    width: 30px;
+                    height: 30px;
+                    background: $primary-color;
+                    border-radius: 0px 10px 10px 0px;
+                    position: absolute;
+                    left: 0;
+                }
+                .category-color1 {
+                    background: $point-2-color !important;
+                }
+                .category-color2 {
+                    background: $point-1-color !important;
+                }
+                .category-color3 {
+                    background: $secondary-textColor !important;
+                }
+                .category-color4 {
+                    background: $point-3-color !important;
+                }
+                .category-color5 {
+                    background: $secondary-color !important;
+                }
+                h4 {
+                    @include fontSize(large);
+                    color: $heading-text-color;
+                }
+                p {
+                    @include fontSize(small);
+                    color: $secondary-textColor;
+                    padding: 0px;
+                }
+                ul {
+                    list-style: none;
+                    padding-left: 0px;
+                    margin-left: 0px;
+                    position: relative;
+                    margin-top: 10px;
+                    li {
+                        position: relative;
+                        margin-left: 10px;
+                    }
+                    li::before {
+                        content: "_";
+                        position: absolute;
+                        left: -10px;
+                        top: -7px;
+                    }
+                }
+
+                .info {
+                    @include DisplayFlexBetween;
+                    .info-img {
+                        img {
+                            height: 35px;
+                            width: 35px;
+                            border-radius: 100%;
+                            border: 3px solid $primary-color;
+                            margin-top: 10px;
+                        }
+                        img.setup {
+                            margin-left: -15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        aside {
+            .user-info {
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100%;
+                }
+            }
+            .chart {
+                margin: 20px 0px;
+                background:#fff;
+                padding: 10px 20px ;
+                border-radius: 10px;
+                h5 {
+                    text-align: center;
+                }
+                p {
+                    @include fontSize(small);
+                    color: $secondary-textColor;
+                    text-align: center;
+                }
+            }
+            .recent-projects {
+                margin-bottom: 20px;
+                .recent-box {
+                    @include DisplayFlexBetween;
+                    background:#fff;
+                    padding: 10px 20px 10px 40px;
+                    border-radius: 10px;
+                    position: relative;
+                    .recent-text {
+                        p {
+                            @include fontSize(small);
+                            color: $secondary-textColor;
+                            margin: 5px 0px;
+                        }
+                        .catagory-color {
+                            width: 15px;
+                            height: 15px;
+                            background: $primary-color;
+                            border-radius: 100%;
+                            position: absolute;
+                            left: 15px;
+                            top:15px
+                        }
+                        .category-color1 {
+                            background: $point-2-color !important;
+                        }
+                        .category-color2 {
+                            background: $point-1-color !important;
+                        }
+                        .category-color4 {
+                            background: $point-3-color !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -6,4 +6,252 @@
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+body {
+  background: #F2F2F2;
+}
+
+body main {
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+body main nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 50%;
+  height: 70px;
+}
+
+body main nav img {
+  width: 35px;
+  width: 35px;
+  border-radius: 5px;
+}
+
+body main nav .icons-box i {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 16px;
+  color: #5FAAD9;
+}
+
+body main article .search .search-input-box form {
+  margin-top: 5px;
+  position: relative;
+}
+
+body main article .search .search-input-box form input {
+  width: 100%;
+  padding: 5px 5px 5px 30px;
+  border: 1px solid #3264A6;
+  outline: 1px solid #3264A6;
+  font-size: 16px;
+}
+
+body main article .search .search-input-box form i {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+body main article .search .noti-edit-box {
+  margin-top: 10px;
+}
+
+body main article .search .noti-edit-box i:nth-child(1) {
+  margin-right: 10px;
+}
+
+body main .title h2 {
+  margin-top: 10px;
+  font-size: 34px;
+}
+
+body main .title form {
+  margin: 10px 0px 20px 0px;
+}
+
+body main .title form label {
+  margin-right: 10px;
+  color: #A69C97;
+}
+
+body main .title form select {
+  height: 25px;
+}
+
+body main .projects-list .project {
+  background: #fff;
+  padding: 10px 20px 10px 40px;
+  -webkit-box-shadow: 1px 1px 10px #3264A6;
+          box-shadow: 1px 1px 10px #3264A6;
+  margin: 5px 0px 20px 0px;
+  border-radius: 10px;
+  position: relative;
+}
+
+body main .projects-list .project .category-color {
+  width: 30px;
+  height: 30px;
+  background: #3264A6;
+  border-radius: 0px 10px 10px 0px;
+  position: absolute;
+  left: 0;
+}
+
+body main .projects-list .project .category-color1 {
+  background: #F2CD5C !important;
+}
+
+body main .projects-list .project .category-color2 {
+  background: #F28DBC !important;
+}
+
+body main .projects-list .project .category-color3 {
+  background: #A69C97 !important;
+}
+
+body main .projects-list .project .category-color4 {
+  background: #F2B872 !important;
+}
+
+body main .projects-list .project .category-color5 {
+  background: #5FAAD9 !important;
+}
+
+body main .projects-list .project h4 {
+  font-size: 21px;
+  color: #224573;
+}
+
+body main .projects-list .project p {
+  font-size: 12px;
+  color: #A69C97;
+  padding: 0px;
+}
+
+body main .projects-list .project ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
+  position: relative;
+  margin-top: 10px;
+}
+
+body main .projects-list .project ul li {
+  position: relative;
+  margin-left: 10px;
+}
+
+body main .projects-list .project ul li::before {
+  content: "_";
+  position: absolute;
+  left: -10px;
+  top: -7px;
+}
+
+body main .projects-list .project .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .projects-list .project .info .info-img img {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  border: 3px solid #3264A6;
+  margin-top: 10px;
+}
+
+body main .projects-list .project .info .info-img img.setup {
+  margin-left: -15px;
+}
+
+body main aside .user-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+body main aside .chart {
+  margin: 20px 0px;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+body main aside .chart h5 {
+  text-align: center;
+}
+
+body main aside .chart p {
+  font-size: 12px;
+  color: #A69C97;
+  text-align: center;
+}
+
+body main aside .recent-projects {
+  margin-bottom: 20px;
+}
+
+body main aside .recent-projects .recent-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  padding: 10px 20px 10px 40px;
+  border-radius: 10px;
+  position: relative;
+}
+
+body main aside .recent-projects .recent-box .recent-text p {
+  font-size: 12px;
+  color: #A69C97;
+  margin: 5px 0px;
+}
+
+body main aside .recent-projects .recent-box .recent-text .catagory-color {
+  width: 15px;
+  height: 15px;
+  background: #3264A6;
+  border-radius: 100%;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+body main aside .recent-projects .recent-box .recent-text .category-color1 {
+  background: #F2CD5C !important;
+}
+
+body main aside .recent-projects .recent-box .recent-text .category-color2 {
+  background: #F28DBC !important;
+}
+
+body main aside .recent-projects .recent-box .recent-text .category-color4 {
+  background: #F2B872 !important;
+}
 /*# sourceMappingURL=style.css.map */
